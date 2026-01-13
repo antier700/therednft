@@ -1,0 +1,180 @@
+@use 'sass:color';
+@use '../../styles/variables' as *;
+
+.contact-us-section {
+  padding: $spacing-xxl 0;
+  background-color: $primary-dark;
+
+
+  .contact-form-card {
+    background-color: $card-dark;
+    border: 0.0625rem solid rgba(255, 255, 255, 0.1);
+    border-radius: $border-radius-lg;
+    padding: 2rem;
+
+    .card-body {
+      padding: 0;
+    }
+
+    .form-label {
+      color: $text-white;
+      font-size: 0.875rem;
+      font-weight: 400;
+      margin-bottom: 0.5rem;
+    }
+
+    .form-control,
+    .form-select {
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 0.0625rem solid $card-border;
+      color: $text-white;
+      border-radius: $border-radius;
+      padding: 0.75rem 1rem;
+      font-size: 0.875rem;
+
+      &:focus {
+        background-color: rgba(255, 255, 255, 0.08);
+        border-color: $accent-green;
+        color: $text-white;
+        box-shadow: 0 0 0 0.125rem rgba(74, 155, 95, 0.25);
+      }
+
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 0.875rem;
+      }
+    }
+
+    .upload-section {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 0.5rem;
+    }
+
+    .upload-box {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 1rem;
+      background-color: transparent;
+      border: 0.125rem dashed rgba(255, 255, 255, 0.2);
+      border-radius: $border-radius;
+      color: $text-light;
+      flex: 1;
+      min-width: 200px;
+
+      .upload-icon {
+        font-size: 1.25rem;
+      }
+
+      .upload-text {
+        font-size: 0.875rem;
+      }
+    }
+
+    .upload-btn {
+      background-color: $accent-gold;
+      border: none;
+      color: $primary-dark;
+      font-weight: 600;
+      padding: 0.75rem 1.5rem;
+      border-radius: $border-radius;
+      font-size: 0.875rem;
+      transition: $transition-base;
+      white-space: nowrap;
+
+      &:hover {
+        background-color: color.scale($accent-gold, $lightness: 10%);
+      }
+    }
+
+    .send-message-btn {
+      background-color: rgba(255, 255, 255, 0.2);
+      border: 0.0625rem solid rgba(255, 255, 255, 0.3);
+      color: $primary-dark;
+      font-weight: 600;
+      padding: 0.875rem 2rem;
+      border-radius: $border-radius;
+      width: 100%;
+      font-size: 1rem;
+      transition: $transition-base;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+        border-color: rgba(255, 255, 255, 0.4);
+      }
+    }
+  }
+
+  .affiliate-card {
+    background-color: $card-dark;
+    border: 0.125rem solid $accent-gold;
+    border-radius: $border-radius-lg;
+    padding: 2rem;
+    height: 100%;
+
+    .card-body {
+      padding: 0;
+    }
+
+    .affiliate-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: $text-white;
+      margin-bottom: 1.5rem;
+      line-height: 1.4;
+    }
+
+    .affiliate-list {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 2rem;
+
+      li {
+        font-size: 0.875rem;
+        color: $text-white;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+        padding-left: 1.5rem;
+        position: relative;
+
+        &::before {
+          content: '•';
+          position: absolute;
+          left: 0;
+          color: $accent-gold;
+          font-size: 1.25rem;
+          line-height: 1.6;
+        }
+      }
+    }
+
+    .affiliate-btn {
+      background-color: $accent-gold;
+      border: none;
+      color: $primary-dark;
+      font-weight: 600;
+      padding: 0.875rem 2rem;
+      border-radius: $border-radius;
+      width: 100%;
+      font-size: 1rem;
+      transition: $transition-base;
+
+      &:hover {
+        background-color: color.scale($accent-gold, $lightness: 10%);
+        transform: translateY(-0.125rem);
+        box-shadow: 0 0.3125rem 1.25rem rgba(212, 175, 55, 0.4);
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .contact-us-section {
+    .affiliate-card {
+      margin-top: $spacing-lg;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@use 'variables' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-primary;
+  background-color: $primary-dark;
+  color: $text-white;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.container-fluid {
+  padding-left: $spacing-md;
+  padding-right: $spacing-md;
+}
+
+@media (max-width: 768px) {
+  .container-fluid {
+    padding-left: $spacing-sm;
+    padding-right: $spacing-sm;
+  }
+}

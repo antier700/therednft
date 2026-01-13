@@ -1,0 +1,43 @@
+@use '../../styles/variables' as *;
+
+.our-values-section {
+  padding: $spacing-xxl 0;
+  background-color: $primary-dark;
+
+
+  .value-card {
+    background-color: $card-dark;
+    border: 0.0625rem solid $card-border;
+    border-radius: $border-radius;
+    padding: 1.5rem 1rem;
+    height: 100%;
+    text-align: center;
+    transition: $transition-base;
+
+    &:hover {
+      transform: translateY(-0.3125rem);
+      box-shadow: 0 0.625rem 1.875rem rgba(74, 155, 95, 0.2);
+      border-color: $accent-green;
+    }
+
+    .value-icon {
+      font-size: 3rem;
+      margin-bottom: $spacing-md;
+    }
+
+    .value-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: $text-white;
+      margin-bottom: $spacing-sm;
+    }
+
+    .value-description {
+      font-size: 1rem;
+      color: $text-light;
+      line-height: 1.6;
+      margin: 0;
+    }
+  }
+}
+

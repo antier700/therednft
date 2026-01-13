@@ -1,0 +1,57 @@
+@use '../../styles/variables' as *;
+
+.our-impact-section {
+  padding: $spacing-xxl 0;
+  // background: linear-gradient(180deg, $primary-dark 0%, $primary-green 100%);
+
+  .impact-card {
+    background-color: $card-dark;
+    border: 0.0625rem solid $card-border;
+    border-radius: $border-radius;
+    padding: 1.5rem 1.25rem;
+    height: 100%;
+    transition: $transition-base;
+
+    &:hover {
+      transform: translateY(-0.3125rem);
+      box-shadow: 0 0.625rem 1.875rem rgba(74, 155, 95, 0.2);
+      border-color: $accent-green;
+    }
+
+    .card-body {
+      padding: 0;
+    }
+
+    .impact-icon {
+      font-size: 2.5rem;
+      color: $accent-green;
+      margin-bottom: 2rem;
+      line-height: 1;
+    }
+
+    .impact-title {
+      font-size: 1rem;
+      font-weight: 400;
+      color: $text-white;
+      margin-bottom: 0.75rem;
+      line-height: 1.5;
+    }
+
+    .impact-key-phrase {
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: $text-white;
+      margin-bottom: 0.5rem;
+      line-height: 1.4;
+    }
+
+    .impact-description {
+      font-size: 0.875rem;
+      font-weight: 400;
+      color: $text-white;
+      line-height: 1.5;
+      margin: 0;
+    }
+  }
+}
+
