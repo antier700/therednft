@@ -6,6 +6,10 @@
   background-color: $primary-dark;
   position: relative;
 
+  @media (max-width: 991px) {
+    padding: $spacing-sm 0;
+  }
+
   .vision-content {
 
     .vision-text {
@@ -101,6 +105,11 @@
       gap: 1rem;
       padding: 1.5rem;
       z-index: 2;
+
+      @media (max-width: 991px) {
+        position: static;
+        margin-top: -3rem;
+      }
     }
 
     .stat-card {

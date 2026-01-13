@@ -6,8 +6,9 @@
   position: relative;
   z-index: 1;
 
-  @media (max-width: 768px) {
-   overflow-x: hidden;
+  @media (max-width: 1199px) {
+   overflow-x: clip;
+   padding: $spacing-sm 0;
   }
 
   &::before {

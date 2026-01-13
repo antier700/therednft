@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="custom-footer" style={{ backgroundImage: `url(${footerArt})` }}>
       <Container>
         <Row>
-          <Col lg={8} className="footer-brand">
+          <Col xl={8} md={6} xs={12} className="footer-brand">
             <div className="footer-logo">
               <img src={logoIcon} alt="The Red Logo" className="logo-icon" />
               <span className="logo-text">THE RED</span>
@@ -27,7 +27,7 @@ const Footer = () => {
               <Link to="#" className="social-icon" aria-label="Reddit">●</Link>
             </div>
           </Col>
-          <Col lg={2} className="footer-links">
+          <Col xl={2} md={3} xs={12} className="footer-links">
             <h5 className="footer-heading">Quick Links</h5>
             <ul className="footer-nav">
               <li><Link to="#">Auctions</Link></li>
@@ -36,7 +36,7 @@ const Footer = () => {
               <li><Link to="#">Staking</Link></li>
             </ul>
           </Col>
-          <Col lg={2} className="footer-links">
+          <Col xl={2} md={3} xs={12} className="footer-links">
             <h5 className="footer-heading">Company</h5>
             <ul className="footer-nav">
               <li><Link to="#">About</Link></li>
