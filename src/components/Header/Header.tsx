@@ -1,14 +1,14 @@
 import { Navbar, Nav, Container } from 'react-bootstrap'
 import './Header.scss'
 import { Link } from 'react-router-dom'
+import logoIcon from '../../assets/images/logo.svg'
 
 const Header = () => {
   return (
     <Navbar expand="lg" className="custom-navbar">
       <Container>
         <Navbar.Brand href="/" className="navbar-brand-custom">
-          <span className="logo-icon">🌺</span>
-          <span className="logo-text">THE RED</span>
+          <img src={logoIcon} alt="The Red Logo" className="logo-icon" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav"> 
