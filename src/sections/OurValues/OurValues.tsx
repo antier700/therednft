@@ -1,26 +1,27 @@
 import { Container, Row, Col, Card } from 'react-bootstrap'
 import CommonHeading from '../../components/CommonHeading/CommonHeading'
 import './OurValues.scss'
+import { EyesIcon, HeartIcon, SecurityIcon, SustainabilityIcon } from '../../assets/svgIcon'
 
 const OurValues = () => {
   const values = [
     {
-      icon: '👁️',
+      icon: <EyesIcon />,
       title: 'Transparency',
       description: 'in operations and ownership'
     },
     {
-      icon: '🛡️',
+      icon: <SecurityIcon />,
       title: 'Stewardship',
       description: 'of both nature and capital'
     },
     {
-      icon: '🍃',
+      icon: <SustainabilityIcon />,
       title: 'Sustainability',
       description: 'as a foundational principle'
     },
     {
-      icon: '❤️',
+      icon: <HeartIcon />,
       title: 'Inclusivity',
       description: 'for communities, investors, and future generations'
     }

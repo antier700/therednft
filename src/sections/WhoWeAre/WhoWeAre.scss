@@ -3,11 +3,16 @@
 .who-we-are-section {
   padding: 5rem 0;
   position: relative;
+  
+  @media (max-width: 768px) {
+    padding: 2rem 0;
+  }
+
   .who-we-are-content {
     padding-right: 3.75rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
 
 
     .section-text {
@@ -32,23 +37,20 @@
   }
 
   .feature-card {
-    background-color: #1a1a1a;
-    border: 0.0625rem solid rgba(255, 255, 255, 0.1);
-    border-radius: 0.5rem;
-    padding: 1.125rem;
+    background-color: #191919;
+    border-radius: 1rem;
+    padding: 0.625rem;
     transition: $transition-base;
     width: 100%;
 
     &:hover {
       transform: translateY(-0.3125rem);
-      box-shadow: 0 0.625rem 1.875rem rgba(74, 155, 95, 0.2);
-      border-color: rgba(74, 155, 95, 0.3);
     }
 
     .feature-icon {
       width: 2.5rem;
       height: 2.5rem;
-      margin-bottom: 1rem;
+      margin-bottom: 1.5625rem;
       display: flex;
       align-items: center;
       justify-content: flex-start;

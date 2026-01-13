@@ -3,21 +3,50 @@
 .our-values-section {
   padding: $spacing-xxl 0;
   background-color: $primary-dark;
+  position: relative;
+  z-index: 1;
+
+  @media (max-width: 768px) {
+   overflow-x: hidden;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: -40%;
+    width: 70%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(207, 176, 0, 0.25) 0%, transparent 90%);
+    filter: blur(5rem);
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 10%;
+    right: -40%;
+    width: 70%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0, 255, 145, 0.2) 0%, transparent 90%);
+    filter: blur(5rem);
+    pointer-events: none;
+    z-index: -1;
+  }
 
 
   .value-card {
     background-color: $card-dark;
-    border: 0.0625rem solid $card-border;
-    border-radius: $border-radius;
-    padding: 1.5rem 1rem;
+    border-radius: $border-radius-lg;
+    padding: 2rem 1rem;
     height: 100%;
     text-align: center;
     transition: $transition-base;
 
     &:hover {
       transform: translateY(-0.3125rem);
-      box-shadow: 0 0.625rem 1.875rem rgba(74, 155, 95, 0.2);
-      border-color: $accent-green;
     }
 
     .value-icon {

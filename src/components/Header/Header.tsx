@@ -1,5 +1,6 @@
 import { Navbar, Nav, Container } from 'react-bootstrap'
 import './Header.scss'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -10,17 +11,17 @@ const Header = () => {
           <span className="logo-text">THE RED</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse id="basic-navbar-nav"> 
           <Nav className="ms-auto">
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/thered">The Red</Nav.Link>
-            <Nav.Link href="/desol">DeSol</Nav.Link>
-            <Nav.Link href="/about">About</Nav.Link>
-            <Nav.Link href="/road-ahead">Road Ahead</Nav.Link>
-            <Nav.Link href="/marketplace">Secondary Marketplace</Nav.Link>
-            <Nav.Link href="/auctions">Auctions</Nav.Link>
-            <Nav.Link href="/track">Track My Tree</Nav.Link>
-            <Nav.Link href="/login">Login</Nav.Link>
+            <Link className="nav-link" to="/">Home</Link>
+            <Link className="nav-link" to="#">The Red</Link>
+            <Link className="nav-link" to="#">DeSol</Link>
+            <Link className="nav-link active" to="/about">About</Link>
+            <Link className="nav-link" to="#">Road Ahead</Link>
+            <Link className="nav-link" to="#">Secondary Marketplace</Link>
+            <Link className="nav-link" to="#">Auctions</Link>
+            <Link className="nav-link" to="#">Track My Tree</Link>
+            <Link className="nav-link" to="#">Login</Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

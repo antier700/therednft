@@ -9,7 +9,7 @@
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(0.625rem);
-  padding: $spacing-sm $spacing-md;
+  padding: $spacing-sm 0;
   border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.1);
 
   .navbar-brand-custom {
@@ -55,5 +55,9 @@
         background-color: $accent-gold;
       }
     }
+  }
+
+  .navbar-toggler {
+    background-color: $accent-gold;
   }
 }

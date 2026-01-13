@@ -1,29 +1,30 @@
 import { Container, Row, Col, Card } from 'react-bootstrap'
 import CommonHeading from '../../components/CommonHeading/CommonHeading'
 import './OurImpact.scss'
+import { BuildingIcon, ClimateIcon, SustainabilityIcon, UsersIcon } from '../../assets/svgIcon'
 
 const OurImpact = () => {
   const impacts = [
     {
-      icon: '🌳',
+      icon: <ClimateIcon/>,
       title: 'Climate',
       stat1: '1M trees',
       stat2: '500,000+ tonnes CO2 absorbed'
     },
     {
-      icon: '👥',
+      icon: <UsersIcon/>,
       title: 'Community',
       stat1: 'Women-led',
       stat2: 'cooperatives and employment programs'
     },
     {
-      icon: '🏢',
+      icon: <BuildingIcon/>,
       title: 'Local Economy',
       stat1: 'Land partnerships',
       stat2: 'Training and long-term sourcing'
     },
     {
-      icon: '🍃',
+      icon: <SustainabilityIcon/>,
       title: 'Biodiversity',
       stat1: 'Traceable restoration',
       stat2: 'Of endangered species habitats'

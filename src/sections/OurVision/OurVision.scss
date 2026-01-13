@@ -79,11 +79,9 @@
     .wood-grain-image {
       position: relative;
       width: 100%;
-      // aspect-ratio: 1 / 1.2;
       border-radius: $border-radius-lg;
-      // overflow: hidden;
-      border: 0.125rem solid rgba(0, 0, 0, 0.8);
-      box-shadow: 0 0.625rem 2.5rem rgba(0, 0, 0, 0.5);
+      // border: 0.125rem solid rgba(0, 0, 0, 0.8);
+      // box-shadow: 0 0.625rem 2.5rem rgba(0, 0, 0, 0.5);
 
       .wood-image {
         width: 100%;
@@ -109,7 +107,7 @@
       flex: 1;
       background-color: rgba(26, 26, 26, 0.5);
       border: 0.0625rem solid rgba(255, 255, 255, 0.1);
-      border-radius: $border-radius;
+      border-radius: $border-radius-lg;
       padding: 1.125rem 0.875rem;
       position: relative;
       backdrop-filter: blur(0.625rem);
@@ -156,7 +154,7 @@
       }
 
       .stat-small-text {
-        font-size: 0.75rem;
+        font-size: 1rem;
         font-weight: 400;
         color: $text-light;
         margin: 0;

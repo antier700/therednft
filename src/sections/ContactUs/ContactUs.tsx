@@ -10,6 +10,7 @@ const ContactUs = () => {
           <CommonHeading
             title="Contact Us:"
             align="left"
+            className="mb-3"
           />
         </Row>
         <Row className="g-4">
@@ -52,9 +53,11 @@ const ContactUs = () => {
                         <div className="upload-section">
                           <div className="upload-box">
                             <span className="upload-icon">📷</span>
-                            <span className="upload-text">Screenshot Picture</span>
                           </div>
-                          <Button className="upload-btn">Upload Picture</Button>
+                           <div className="upload-text-btn-container">
+                           <p className="upload-text">Screenshot Picture</p>
+                           <Button className="upload-btn">Choose File</Button>
+                           </div>
                         </div>
                       </Form.Group>
                     </Col>

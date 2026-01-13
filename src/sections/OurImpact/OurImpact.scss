@@ -2,20 +2,16 @@
 
 .our-impact-section {
   padding: $spacing-xxl 0;
-  // background: linear-gradient(180deg, $primary-dark 0%, $primary-green 100%);
 
   .impact-card {
     background-color: $card-dark;
-    border: 0.0625rem solid $card-border;
-    border-radius: $border-radius;
-    padding: 1.5rem 1.25rem;
+    border-radius: $border-radius-lg;
+    padding: 2.5rem 1.25rem;
     height: 100%;
     transition: $transition-base;
 
     &:hover {
-      transform: translateY(-0.3125rem);
-      box-shadow: 0 0.625rem 1.875rem rgba(74, 155, 95, 0.2);
-      border-color: $accent-green;
+        transform: translateY(-0.3125rem);
     }
 
     .card-body {

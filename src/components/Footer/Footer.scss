@@ -46,12 +46,11 @@
     }
 
     .footer-description {
-      color: $text-white;
+      color: #6B7280;
       font-size: 0.875rem;
       line-height: 1.6;
       margin-bottom: 1.5rem;
       max-width: 20rem;
-      opacity: 0.5;
     }
 
     .social-icons {
@@ -83,7 +82,7 @@
     }
 
     .copyright {
-      color: $text-white;
+      color: #6B7280;
       font-size: 0.875rem;
     }
   }
@@ -108,7 +107,7 @@
         margin-bottom: 0.75rem;
 
         a {
-          color: $text-white;
+          color: #6B7280;
           text-decoration: none;
           font-size: 0.875rem;
           transition: $transition-base;
@@ -123,15 +122,23 @@
   }
 
   .footer-bottom {
-    margin-top: 3rem;
-    padding-top: 1.5rem;
-    border-top: 0.0625rem solid rgba(255, 255, 255, 0.1);
+    padding-top: 2.5rem;
     text-align: right;
     position: relative;
     z-index: 1;
 
+    p {
+      color: #6B7280;
+      font-size: 0.875rem;
+      margin-bottom: 0;
+
+      .text-white {
+        color: $text-white;
+      }
+    }
+
     a {
-      color: $text-white;
+      color: #6B7280;
       text-decoration: none;
       font-size: 0.875rem;
       transition: $transition-base;
@@ -142,7 +149,7 @@
     }
 
     .separator {
-      color: $text-white;
+      color: #6B7280;
       margin: 0 0.75rem;
     }
   }
