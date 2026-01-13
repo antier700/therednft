@@ -1,0 +1,52 @@
+@use '../../styles/variables' as *;
+
+.common-heading-wrapper {
+  margin-bottom: $spacing-xl;
+}
+
+.section-title {
+  font-size: 3.125rem;
+  font-weight: 500;
+  color: $text-white;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+
+  &.large {
+    font-size: 4rem;
+    text-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.8);
+  }
+
+  .title-first {
+    color: $text-white;
+  }
+
+  .title-second {
+    color: $accent-gold;
+  }
+
+  span {
+    color: $accent-gold;
+  }
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: $text-white;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 992px) {
+  .section-title {
+    font-size: 2.5rem;
+
+    &.large {
+      font-size: 2.5rem;
+    }
+  }
+
+  .section-subtitle {
+    font-size: 0.875rem;
+  }
+}

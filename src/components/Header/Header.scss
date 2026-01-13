@@ -1,0 +1,63 @@
+@use '../../styles/variables' as *;
+
+.custom-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(0.625rem);
+  padding: $spacing-sm 0;
+  border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.1);
+
+  .navbar-brand-custom {
+    display: flex;
+    align-items: center;
+    gap: $spacing-xs;
+    color: $text-white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+
+    .logo-icon {
+      font-size: 2rem;
+      color: $accent-gold;
+    }
+
+    .logo-text {
+      letter-spacing: 0.1em;
+    }
+  }
+
+  .nav-link {
+    color: $text-white;
+    padding: $spacing-xs $spacing-sm;
+    margin: 0 $spacing-xs;
+    transition: $transition-base;
+    position: relative;
+
+    &:hover {
+      color: $accent-gold;
+    }
+
+    &.active {
+      color: $accent-gold;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: $spacing-xs;
+        right: $spacing-xs;
+        height: 0.125rem;
+        background-color: $accent-gold;
+      }
+    }
+  }
+
+  .navbar-toggler {
+    background-color: $accent-gold;
+  }
+}
