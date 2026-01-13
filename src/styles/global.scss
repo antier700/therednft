@@ -18,6 +18,11 @@ body {
   min-height: 100vh;
 }
 
+.container {
+  max-width: 1200px;
+}
+
+
 .container-fluid {
   padding-left: $spacing-md;
   padding-right: $spacing-md;

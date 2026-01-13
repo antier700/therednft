@@ -11,6 +11,10 @@
     border-radius: $border-radius-lg;
     padding: 2rem;
 
+    @media (max-width: 767px) {
+      padding: 1rem;
+    }
+
     .card-body {
       padding: 0;
     }
@@ -130,6 +134,10 @@
       color: $text-white;
       margin-bottom: 1.5rem;
       line-height: 1.2;
+
+      @media (max-width: 767px) {
+        font-size: 1.4rem;
+      }
     }
 
     .affiliate-list {
