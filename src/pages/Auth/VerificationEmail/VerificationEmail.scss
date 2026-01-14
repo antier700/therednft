@@ -1,0 +1,51 @@
+@use '../../../styles/variables' as *;
+
+.verification-email-screen {
+  .auth-back-link {
+    background: none;
+    border: none;
+    color: $accent-gold;
+    font-size: 0.875rem;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+    padding: 0;
+    transition: $transition-base;
+
+    &:hover {
+      color: lighten($accent-gold, 10%);
+    }
+  }
+
+  .auth-form {
+    .otp-label {
+      color: $text-light;
+      font-size: 0.875rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .resend-timer {
+      color: $accent-gold;
+      font-size: 0.875rem;
+      margin-bottom: 1.5rem;
+
+      .resend-link {
+        background: none;
+        border: none;
+        color: $accent-gold;
+        font-size: 0.875rem;
+        cursor: pointer;
+        padding: 0;
+        text-decoration: underline;
+        transition: $transition-base;
+
+        &:hover {
+          color: lighten($accent-gold, 10%);
+        }
+      }
+    }
+
+    .ui-button {
+      width: 100%;
+    }
+  }
+}

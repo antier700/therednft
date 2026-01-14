@@ -1,0 +1,48 @@
+@use '../../../../styles/variables' as *;
+
+.custom-modal {
+  background: rgba(0, 0, 0, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  color: $text-white;
+}
+
+.custom-modal-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.custom-modal-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: $text-white;
+}
+
+.custom-modal-close {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: $transition-base;
+
+  &:hover {
+    color: $text-white;
+  }
+}
+
+.custom-modal-body {
+  padding: 1.25rem;
+}
+
+.custom-modal-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 1rem 1.25rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+

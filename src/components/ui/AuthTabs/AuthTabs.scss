@@ -1,0 +1,53 @@
+@use '../../../styles/variables' as *;
+
+.auth-tabs {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: end;
+  gap: 0;
+  margin: 1.25rem 0 2.25rem 0;
+  padding-bottom: 0.75rem;
+
+  .auth-tab {
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 0 0 0.75rem 0;
+    cursor: pointer;
+    transition: $transition-base;
+
+    &.active {
+      color: $text-white;
+    }
+  }
+
+  .auth-tabs-underline {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0.25rem;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.18);
+  }
+
+  .auth-tabs-active-indicator {
+    position: absolute;
+    bottom: 0.25rem;
+    height: 2px;
+    width: 45%;
+    background: $text-white;
+    transition: $transition-base;
+  }
+
+  &[data-active='left'] .auth-tabs-active-indicator {
+    left: 0;
+  }
+
+  &[data-active='right'] .auth-tabs-active-indicator {
+    left: 55%;
+  }
+}
+

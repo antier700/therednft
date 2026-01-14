@@ -1,0 +1,46 @@
+@use '../../../styles/variables' as *;
+
+.ui-toast {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 1rem;
+  border-radius: 0.75rem;
+  background: rgba(25, 25, 25, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.9);
+  transition: $transition-base;
+
+  .ui-toast-message {
+    flex: 1;
+    font-size: 0.875rem;
+    line-height: 1.3;
+  }
+
+  .ui-toast-close {
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.25rem;
+    cursor: pointer;
+    padding: 0 0.25rem;
+    transition: $transition-base;
+
+    &:hover {
+      color: $text-white;
+    }
+  }
+}
+
+.ui-toast-success {
+  border-color: rgba(74, 155, 95, 0.35);
+}
+
+.ui-toast-error {
+  border-color: rgba(231, 0, 11, 0.35);
+}
+
+.ui-toast-info {
+  border-color: rgba(212, 175, 55, 0.25);
+}
+

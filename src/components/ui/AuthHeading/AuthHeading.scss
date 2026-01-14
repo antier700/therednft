@@ -1,0 +1,42 @@
+@use '../../../styles/variables' as *;
+
+.auth-heading {
+  margin-bottom: 1.75rem;
+
+  &.auth-heading-center {
+    text-align: center;
+  }
+
+  &.auth-heading-left {
+    text-align: left;
+  }
+
+  .auth-heading-title {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin: 0 0 0.75rem 0;
+  }
+
+  .auth-heading-subtitle {
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.55);
+    margin: 0;
+  }
+
+  &.auth-heading-white {
+    .auth-heading-title {
+      color: $text-white;
+    }
+  }
+
+  &.auth-heading-gold {
+    .auth-heading-title {
+      color: $accent-gold;
+    }
+  }
+}
+
