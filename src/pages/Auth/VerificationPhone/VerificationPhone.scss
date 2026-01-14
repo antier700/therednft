@@ -1,3 +1,4 @@
+@use 'sass:color';
 @use '../../../styles/variables' as *;
 
 .verification-phone-screen {
@@ -12,7 +13,7 @@
     transition: $transition-base;
 
     &:hover {
-      color: lighten($accent-gold, 10%);
+      color: color.adjust($accent-gold, $lightness: 10%);
     }
   }
 
@@ -54,7 +55,7 @@
         transition: $transition-base;
 
         &:hover {
-          color: lighten($accent-gold, 10%);
+          color: color.adjust($accent-gold, $lightness: 10%);
         }
       }
     }
