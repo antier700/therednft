@@ -1,0 +1,31 @@
+@use '../../../styles/variables' as *;
+
+.ui-tooltip {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+
+  .ui-tooltip-bubble {
+    position: absolute;
+    left: 50%;
+    bottom: calc(100% + 10px);
+    transform: translateX(-50%);
+    white-space: nowrap;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    background: rgba(25, 25, 25, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.75rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: $transition-base;
+    z-index: 20;
+  }
+
+  &:hover .ui-tooltip-bubble,
+  &:focus-within .ui-tooltip-bubble {
+    opacity: 1;
+  }
+}
+

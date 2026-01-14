@@ -1,0 +1,61 @@
+@use 'sass:color';
+@use '../../../../styles/variables' as *;
+
+.join-us-section {
+  padding: $spacing-xxl 0;
+  background-image: url('../../assets/images/video_img.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(7, 7, 7, 0.8) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: -1;
+  }
+
+
+  .buy-now-btn {
+    background-color: $accent-gold;
+    border: none;
+    color: $primary-dark;
+    font-weight: 600;
+    padding: $spacing-sm $spacing-lg;
+    border-radius: $border-radius;
+    font-size: 1.2rem;
+    transition: $transition-base;
+    margin-bottom: $spacing-sm;
+    position: relative;
+    z-index: 1;
+
+    &:hover {
+      background-color: color.scale($accent-gold, $lightness: 10%);
+      transform: translateY(-0.125rem);
+      box-shadow: 0 0.3125rem 1.25rem rgba(212, 175, 55, 0.4);
+    }
+  }
+
+  .cta-text {
+    color: $accent-green;
+    font-size: 1rem;
+    margin-top: $spacing-sm;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .join-us-section {
+    padding: $spacing-xl 0;
+    background-attachment: scroll;
+  }
+}

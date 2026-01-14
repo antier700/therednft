@@ -1,0 +1,27 @@
+@use '../../../styles/variables' as *;
+
+.otp-box-container {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+
+  .otp-input {
+    width: 56px;
+    height: 56px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid $card-border;
+    border-radius: $border-radius;
+    text-align: center;
+    color: $text-white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: $transition-base;
+
+    &:focus {
+      outline: none;
+      border-color: rgba(255, 255, 255, 0.3);
+      background-color: rgba(255, 255, 255, 0.08);
+      box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+    }
+  }
+}

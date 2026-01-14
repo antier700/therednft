@@ -1,0 +1,46 @@
+@use '../../../styles/variables' as *;
+
+.login-screen {
+  .auth-form {
+    .auth-form-footer {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 1.5rem;
+
+      .auth-link {
+        background: none;
+        border: none;
+        color: rgba(255, 255, 255, 0.75);
+        font-size: 0.875rem;
+        font-weight: 500;
+        cursor: pointer;
+        padding: 0;
+        transition: $transition-base;
+
+        &:hover {
+          color: $text-white;
+        }
+      }
+    }
+
+    .auth-actions {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+
+      .auth-primary {
+        flex: 1;
+      }
+
+      .auth-google {
+        flex: 0 0 auto;
+      }
+
+      .auth-google-icon {
+        font-size: 1.75rem;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+      }
+    }
+  }
+}

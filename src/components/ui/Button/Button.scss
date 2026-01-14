@@ -1,0 +1,46 @@
+@use '../../../styles/variables' as *;
+
+.ui-button {
+  border: none;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: $transition-base;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+
+  &.ui-button-primary {
+    height: 64px;
+    padding: 0 2rem;
+    width: 100%;
+    background: $gradient-red;
+    color: $text-white;
+    box-shadow: 0 8px 30px rgba(231, 0, 11, 0.25);
+
+    &:hover {
+      box-shadow: 0 10px 34px rgba(231, 0, 11, 0.35);
+      filter: brightness(1.05);
+    }
+
+    &:active {
+      filter: brightness(0.98);
+    }
+  }
+
+  &.ui-button-icon {
+    width: 64px;
+    height: 64px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.85);
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.18);
+    }
+  }
+}
+
